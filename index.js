@@ -24,7 +24,7 @@ function viewCart() {
   else {
     retString =  "In your cart, you have "
 
-    for (var i = 0; i<cart.length; i++) {
+    for (var i = 0; i < cart.length; i++) {
       cartItem = cart[i]
       if (i > 0) {
         retString = retString + ", "
@@ -43,7 +43,15 @@ function viewCart() {
 }
 
 function total() {
-  // write your code here
+  var cartItem = {}
+  var itemsTotal = 0
+
+  for (var i=0; i < cart.length; i++) {
+    cartItem = cart[i]
+    itemsTotal = itemsTotal + cartItem.itemPrice
+  }
+
+  return itemsTotal
 }
 
 function removeFromCart(item) {
