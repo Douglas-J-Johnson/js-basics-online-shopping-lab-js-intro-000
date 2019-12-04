@@ -35,6 +35,8 @@ function viewCart() {
 
     retString = retString + "."
   }
+
+  return retString
 }
 
 function total() {
