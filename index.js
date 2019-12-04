@@ -30,7 +30,7 @@ function viewCart() {
         retString = retString + ","
       }
 
-      retString = retString + `${cartItem.itemName} at ${cartItem.itemPrice}`
+      retString = retString + `${cartItem.itemName} at \$${cartItem.itemPrice}`
     }
 
     retString = retString + "."
