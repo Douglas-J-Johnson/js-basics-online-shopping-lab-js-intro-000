@@ -29,6 +29,9 @@ function viewCart() {
       if (i > 0) {
         retString = retString + ", "
       }
+      if (cart.length > 1 && i === cart.length - 1) {
+        retString = retString + "and "
+      }
 
       retString = retString + `${cartItem.itemName} at \$${cartItem.itemPrice}`
     }
