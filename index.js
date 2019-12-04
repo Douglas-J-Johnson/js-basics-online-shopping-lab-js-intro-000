@@ -17,13 +17,13 @@ function addToCart(item) {
 function viewCart() {
   var retString = ""
   var cartItem = {}
-  
+
   if(cart.length === 0) {
     retString "Your shopping cart is empty."
   }
   else {
     retString =  "In your cart, you have"
-    
+
     for (var i = 0; i<cart.length; i++) {
       cartItem = cart[i]
       if (i > 0) {
