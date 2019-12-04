@@ -19,7 +19,7 @@ function viewCart() {
   var cartItem = {}
 
   if(cart.length === 0) {
-    retString = Your shopping cart is empty."
+    retString = "Your shopping cart is empty."
   }
   else {
     retString =  "In your cart, you have"
