@@ -15,8 +15,25 @@ function addToCart(item) {
 }
 
 function viewCart() {
+  var retString = ""
+  var cartItem = {}
+  
   if(cart.length === 0) {
-    return "Your shopping cart is empty."
+    retString "Your shopping cart is empty."
+  }
+  else {
+    retString =  "In your cart, you have"
+    
+    for (var i = 0; i<cart.length; i++) {
+      cartItem = cart[i]
+      if (i > 0) {
+        retString = retString + ","
+      }
+
+      retString = retString + `${cartItem.itemName} at ${cartItem.itemPrice}`
+    }
+
+    retString = retString + "."
   }
 }
 
