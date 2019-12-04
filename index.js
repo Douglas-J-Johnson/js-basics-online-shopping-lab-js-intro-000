@@ -19,10 +19,10 @@ function viewCart() {
   var cartItem = {}
 
   if(cart.length === 0) {
-    retString "Your shopping cart is empty."
+    retString = Your shopping cart is empty."
   }
   else {
-    /*retString =  "In your cart, you have"
+    retString =  "In your cart, you have"
 
     for (var i = 0; i<cart.length; i++) {
       cartItem = cart[i]
@@ -33,7 +33,7 @@ function viewCart() {
       retString = retString + `${cartItem.itemName} at ${cartItem.itemPrice}`
     }
 
-    retString = retString + "."*/
+    retString = retString + "."
   }
 }
 
