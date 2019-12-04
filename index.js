@@ -27,7 +27,7 @@ function viewCart() {
     for (var i = 0; i<cart.length; i++) {
       cartItem = cart[i]
       if (i > 0) {
-        retString = retString + ","
+        retString = retString + ", "
       }
 
       retString = retString + `${cartItem.itemName} at \$${cartItem.itemPrice}`
