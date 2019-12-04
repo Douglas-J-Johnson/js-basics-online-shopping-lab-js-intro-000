@@ -22,7 +22,7 @@ function viewCart() {
     retString = "Your shopping cart is empty."
   }
   else {
-    retString =  "In your cart, you have"
+    retString =  "In your cart, you have "
 
     for (var i = 0; i<cart.length; i++) {
       cartItem = cart[i]
